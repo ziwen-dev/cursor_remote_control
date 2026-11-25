@@ -1,0 +1,8 @@
+{
+  "runner": {
+    "mode": "cursor-desktop",
+    "cursorCommand": "D:\\Program Files (x86)\\cursor\\resources\\app\\bin\\cursor.cmd",
+    "pollIntervalMs": 2000,
+    "completionFile": ".agent-runs/{jobId}/final.md"
+  }
+}

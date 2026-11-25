@@ -1,0 +1,7 @@
+{
+  "runner": {
+    "mode": "command",
+    "command": "cursor-agent",
+    "args": ["--print", "--output-format", "text"]
+  }
+}

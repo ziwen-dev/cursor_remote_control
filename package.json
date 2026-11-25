@@ -1,0 +1,23 @@
+{
+  "name": "cursor-remote-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser-based remote console for driving local Cursor agents securely",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "start:ui": "start-bridge.cmd",
+    "autostart:install": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -CreateTasks",
+    "cursor-login": "node scripts/cursor-login.js",
+    "check": "node --check src/server.js && node --check src/job-manager.js && node --check src/runner.js && node --check src/cursor-sdk-runner.js",
+    "test": "node --test --test-concurrency=1"
+  },
+  "dependencies": {
+    "@cursor/sdk": "1.4.2",
+    "dompurify": "3.4.18",
+    "marked": "18.2.1"
+  }
+}

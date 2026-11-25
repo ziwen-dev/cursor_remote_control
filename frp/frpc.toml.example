@@ -1,0 +1,16 @@
+serverAddr = "203.0.113.10"
+serverPort = 7000
+
+auth.method = "token"
+auth.token = "REPLACE_WITH_THE_SAME_FRP_TOKEN"
+
+transport.tls.enable = true
+
+[[proxies]]
+name = "cursor-remote-bridge-http"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 7419
+customDomains = ["cursor.bridge.example.com"]
+
+# Caddy terminates public TLS and forwards plain HTTP to frps on loopback.

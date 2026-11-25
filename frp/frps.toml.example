@@ -1,0 +1,11 @@
+# Cloud host. Do not expose the bridge port directly to the Internet.
+bindAddr = "0.0.0.0"
+bindPort = 7000
+vhostHTTPPort = 8080
+
+auth.method = "token"
+auth.token = "REPLACE_WITH_A_LONG_RANDOM_FRP_TOKEN"
+
+transport.tls.force = true
+
+allowPorts = [{ start = 7000, end = 7000 }]

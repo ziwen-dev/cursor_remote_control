@@ -1,0 +1,23 @@
+{
+  "host": "127.0.0.1",
+  "port": 7419,
+  "publicDir": "public",
+  "dataDir": "data",
+  "tokenFile": "data/api-token.txt",
+  "allowedWorkspaces": [
+    "D:\\projects\\example"
+  ],
+  "maxConcurrentJobs": 2,
+  "maxQueuedJobs": 20,
+  "maxOutputBytes": 8388608,
+  "defaultTimeoutSeconds": 1800,
+  "runner": {
+    "mode": "cursor-sdk",
+    "model": "composer-2",
+    "apiKeyFile": "data/cursor-api-key.txt",
+    "allowStoredAuth": true,
+    "settingSources": [],
+    "autoReview": true,
+    "enableAgentRetries": true
+  }
+}
