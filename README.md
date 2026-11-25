@@ -43,6 +43,12 @@ Bridge 默认只监听 `127.0.0.1`。本地使用时，浏览器直接访问 `ht
 
 Cursor Agent 在当前 Windows 用户会话中运行，文件修改、终端命令和 Git 操作都在所选 Workspace 内进行。
 
+## 效果展示
+
+![Cursor Bridge 浅色工作台，左侧按工作区显示会话，右侧展示对话和折叠的 thinking](./1.png)
+
+![Cursor Bridge 对话界面，底部可以选择模型和切换 Fast 模式](./2.png)
+
 ## 快速开始
 
 ### 环境要求
